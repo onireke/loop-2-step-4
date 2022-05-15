@@ -1,0 +1,105 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4b4b73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.heading-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.1rem;
+}
+
+.not-outing {
+  width: 4rem;
+  height: 3rem;
+  background-color: #363549;
+}
+.main-food {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  border-radius: 5px;
+}
+
+.not-outing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #363549;
+}
+
+.not-outing:hover {
+  background-color: black;
+}
+.outing {
+  transform: scale(1.2);
+  background-color: black;
+}
+
+.food-div {
+  width: 17rem;
+  height: 8rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: url("img/food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.food-location {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: 4rem;
+  color: white;
+}
+
+.food-location > span {
+  margin-left: 0.3rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.orders {
+  background-color: white;
+  width: 17rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+  color: grey;
+}
+
+.order:hover p:nth-child(2) {
+  color: black;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.order > p {
+  margin: 0;
+}
